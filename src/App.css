@@ -1,0 +1,142 @@
+
+.card{
+  display: flex;
+  /* border:2px solid red ; */
+  flex:11;
+  width: 90%;
+   align-items: center;
+  justify-content: space-evenly;
+  
+} 
+.con{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+border-radius: 25px;
+box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.584);
+
+}
+.picker{
+  flex: 3;
+  /* border: 2px solid blue; */
+  width: 90%;
+  max-height: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+  
+
+}
+select{
+  height: 5em;
+  width: 30em;
+  border-style: hidden;
+  border-radius: 25px;
+  font-size: 1.1em;
+}
+ select option{
+  border-style: hidden;
+  border-radius: 25px;
+  height: 3em;
+  width: 25em;
+  font-size: 1.3em;
+}
+select::after{
+  background-color: #FF6A88;
+}
+button{
+  height: 5em;
+  width: 10em;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+}
+.ele{
+  /* min-width: 20%;
+  min-height: 30%; */
+  /* border: 2px solid black; */
+  /* max-width: 20%;
+  max-height: 30%; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  width: 20%;
+    height: 30%;
+  scale:0.75;
+
+}
+.ele_inner{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+.ele_inner.is-flipped{
+  transform: rotateY(180deg);
+  pointer-events: none;
+
+}
+
+.ele-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+}
+.front-face{
+  background-color: #bdd4e7;
+  background-image: url(pattern.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.2em; */
+  
+
+}
+.back-face{
+  background-color: white;
+  transform: rotateY(180deg);
+}
+.back-face img{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.ele-con{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.big-c{
+  width: 95%;
+  height: 90%;
+/* border: 2px solid navy; */
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 1em;
+padding-bottom: 1em;
+
+
+}
